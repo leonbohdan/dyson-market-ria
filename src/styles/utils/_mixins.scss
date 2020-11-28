@@ -4,3 +4,10 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin main-text {
+  color: $text-color-dark;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}

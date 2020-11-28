@@ -19,25 +19,164 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <div class="header__navbar"></div>
-        <div class="header__searchbar"></div>
-        <div class="header__info"></div>
-        <div class="header__img"></div>
-        <div class="header__about"></div>
+        <nav class="header__navbar navbar">
+          <a class="navbar__brand" href="#">
+            <img
+              class="navbar__logo"
+              src="./images/logo.svg"
+              alt="header-img"
+            >
+          </a>
+
+          <button
+            class="navbar__toggler"
+            type="button"
+            data-target="#navbarText"
+          >
+            <span class="navbar__toggler--icon"></span>
+          </button>
+
+          <div class="navbar__items">
+            <div class="navbar__item">
+              <a href="#">Информация для покупателя</a>
+            </div>
+
+            <div class="navbar__item">
+              <a href="#">Блог</a>
+            </div>
+
+            <div class="navbar__item">
+              <a href="#">Регистрация</a>
+            </div>
+
+            <div class="navbar__item">
+              <a href="#">Вход в кабинет</a>
+            </div>
+          </div>
+
+          <div class="navbar__lang">
+            <a class="navbar__lang--item is-active" href="#">Рус</a>
+
+            <div class="navbar__lang--divider">|</div>
+
+            <a class="navbar__lang--item" href="#">Укр</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="searchbar searchbar__container container">
+        <div class="searchbar__menu menu">
+          <div class="searchbar__name">Каталог товаров</div>
+
+          <ul class="searchbar__list">
+            <li class="searchbar__item">
+              <a href="#">Чехлы на сидения</a>
+            </li>
+
+            <li class="searchbar__item">
+              <a href="#">Защита двигателя</a>
+            </li>
+
+            <li class="searchbar__item">
+              <a href="#">Коврики</a>
+            </li>
+
+            <li class="searchbar__item">
+              <a href="#">Фаркопы</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="searchbar__search-box">
+          <input
+            class="searchbar__search-box--search"
+            type="text"
+            placeholder="Поиск по названию, коду, категории товаров"
+          >
+          <button class="searchbar__search-box--button">
+            Найти
+          </button>
+        </div>
+      </div>
+
+      <div class="header__info container">
+        Інформація для постачальників
+      </div>
+
+      <div class="header__img">
+        <div class="header__img--container"></div>
+      </div>
+
+      <div class="header__about container">
+        <div class="header__about--item">
+          <span class="header__about--how-much">100+</span>
+          перевірених постачальників
+        </div>
+
+        <div class="header__about--item">
+          <span class="header__about--how-much">100 000+</span>
+          товарних позицій
+        </div>
+
+        <div class="header__about--item">
+          <span class="header__about--how-much">180 000+</span>
+          користувачів у місяць
+        </div>
+
+        <div class="header__about--item">
+          <span class="header__about--how-much">45%</span>
+          зростання аудиторії за 2019 рік
+        </div>
       </div>
     </header>
 
     <main class="main">
       <div class="main__container container">
         <div class="main__conditions">
-          <div class="main__item"></div>
-          <div class="main__item"></div>
-          <div class="main__item"></div>
-          <div class="main__item"></div>
+          <h2 class="main__conditions--heading">
+            Основні умови співпраці
+          </h2>
+
+          <div class="main__conditions--block">
+            <div class="main__item">
+              <div class="main__item--number">1</div>
+              Нас цікавить лише довготривала співпраця
+            </div>
+            <div class="main__item main__item--center">
+              <div class="main__item--number">2</div>
+              Основна схема співпраці - дропшипінг
+            </div>
+            <div class="main__item">
+              <div class="main__item--number">3</div>
+              Наявність прайс-листів<br/>
+              для швидкого запуску товарів в наш каталог
+            </div>
+            <div class="main__item main__item--last">
+              <div class="main__item--number">4</div>
+              Ми дотримуємося законів, тому повинна бути можливість повернення Постачальнику<br/>
+              непошкодженого та не бувшого у вжитку товару, протягом 14 днів з моменту покупки
+            </div>
+          </div>
         </div>
+
         <div class="main__description">
-          <p class="main__paragraph"></p>
-          <p class="main__paragraph"></p>
+          <p class="main__paragraph">
+            Мы рады приветствовать вас на нашем сайте проверенных автотоваров. Если вы автовладелец или автолюбитель -
+            вы находитесь в нужном месте. Ведь мы предлагаем аксессуары для автомобилей от производителей напрямую. Для
+            вас - это гарантия качества, лучшие автотовары и доступные цены.
+          </p><br/>
+          <p class="main__paragraph main__paragraph--bottom">
+            Наши преимущества - ваши выгоды!<br/>
+            удобный поиск (если интересуют товары для конкретного авто, введите его параметры в форму на сайте, мы
+            покажем подходящие автопринадлежности во всех категориях);<br/>
+            индивидуальный подбор по параметрам вашего автомобиля гарантирует совместимость с машиной;<br />
+            на всех этапах, начиная с поиска и заканчивая получением, вас будет сопровождать персональный
+            менеджер;<br />
+            наш интернет магазин для автомобилистов предоставляет 28 дней гарантии на возврат покупки. У вас будет
+            достаточно времени чтобы понять, подходит ли вам принадлежность;<br/>
+            мы №1 интернет-магазин автомобильных товаров в Украине на рынке онлайн-продаж авточехлов. Для вас это -
+            индивидуальный пошив, большой выбор по материалам, цветам и диапазону цен;
+          </p>
         </div>
       </div>
     </main>
@@ -49,16 +188,48 @@
             Информация для покупателя
           </p>
 
-          <div class="footer__item">
-            <p class="footer__text">Оплата и доставка</p>
-            <p class="footer__text">Политика возвратов</p>
-            <p class="footer__text">Гарантия</p>
-          </div>
+          <div class="footer__items">
+            <div class="footer__item">
+              <a
+                class="footer__text footer__text--link"
+                href="#"
+              >
+                Оплата и доставка
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="#"
+              >
+                Политика возвратов
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="#"
+              >
+                Гарантия
+              </a>
+            </div>
 
-          <div class="footer__item">
-            <p class="footer__text">О магазине</p>
-            <p class="footer__text">Карта сайта</p>
-            <p class="footer__text">Вход в кабинет</p>
+            <div class="footer__item">
+              <a
+                class="footer__text footer__text--link"
+                href="#"
+              >
+                О магазине
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="#"
+              >
+                Карта сайта
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="#"
+              >
+                Вход в кабинет
+              </a>
+            </div>
           </div>
         </div>
 
@@ -82,23 +253,42 @@
             Контакты
           </p>
 
-          <div class="footer__item">
-            <p class="footer__text">
-              (067)405-23-53
-            </p>
-            <p class="footer__text">
-              (067)405-23-53
-            </p>
-            <p class="footer__text">
-              (067)405-23-53
-            </p>
-          </div>
+          <div class="footer__items">
+            <div class="footer__item">
+              <a
+                class="footer__text footer__text--link"
+                href="tel:(067)405-23-53"
+              >
+                (067)405-23-53
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="tel:(067)405-23-53"
+              >
+                (067)405-23-53
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="tel:(067)405-23-53"
+              >
+                (067)405-23-53
+              </a>
+            </div>
 
-          <div class="footer__item">
-            <p class="footer__text">
-              (067)405-23-53
-            </p>
-            <p class="footer__text">info.market@ria.com</p>
+            <div class="footer__item">
+              <a
+                class="footer__text footer__text--link"
+                href="tel:(067)405-23-53"
+              >
+                (067)405-23-53
+              </a>
+              <a
+                class="footer__text footer__text--link"
+                href="mailto:info.market@ria.com"
+              >
+                info.market@ria.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

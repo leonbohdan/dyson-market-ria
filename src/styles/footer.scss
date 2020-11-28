@@ -1,3 +1,39 @@
 .footer {
-  // 
+  margin: 30px 0 25px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__heading {
+    color: $text-color-dark;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin: 4px 0;
+    padding: 4px 0;
+    color: $text-color-dark;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    &--link {
+      @include hover(opacity, 0.6);
+    }
+  }
 }

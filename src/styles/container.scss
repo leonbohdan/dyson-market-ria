@@ -1,5 +1,5 @@
 .container {
-  max-width: 1366px;
-  background-color: gray;
+  max-width: $container-max-width;
   margin: 0 auto;
+  padding: $container-padding;
 }

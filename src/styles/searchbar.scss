@@ -1,0 +1,79 @@
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bgc-searchbar;
+  height: 80px;
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 270px;
+    height: 46px;
+    border-radius: 2px;
+    background-color: $button-color;
+    color: $text-color-light;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+    @include hover(opacity, 0.9);
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__item {
+    //
+  }
+
+  &__menu {
+    //
+  }
+
+  &__search-box {
+    display: flex;
+    width: 100%;
+
+    &--search {
+      max-width: 770px;
+      width: 100%;
+      height: 46px;
+      padding: 0 25px;
+      color: $lang-color;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+
+      outline-style: none;
+      border: 1px solid $search-border-color;
+      border-radius: 2px 0 0 2px;
+    }
+
+    &--button {
+      max-width: 100px;
+      width: 100%;
+      height: 46px;
+      cursor: pointer;
+      color: $text-color-light;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+
+      outline: none;
+      border: none;
+      background-color: $button-color;
+      border-radius: 0 2px 2px 0;
+      margin-left: -1px;
+
+      @include hover(opacity, 0.9);
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+  }
+}
