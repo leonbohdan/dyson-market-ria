@@ -11,6 +11,36 @@
 
   &__toggler {
     display: none;
+
+    padding: 10px 0;
+    cursor: pointer;
+
+    &--icon {
+      position: relative;
+      display: block;
+    }
+
+    &--icon::before {
+      position: absolute;
+      content: "";
+      top: -7px;
+    }
+
+    &--icon::after {
+      position: absolute;
+      content: "";
+      top: 7px;
+    }
+
+    &--icon,
+    &--icon::before,
+    &--icon::after {
+      @include burger-item;
+    }
+
+    @media (max-width: 890px) {
+      display: block;
+    }
   }
 
   &__items {
@@ -19,6 +49,10 @@
     margin-left: 60px;
     margin-right: 30px;
     width: 700px;
+
+    @media (max-width: 890px) {
+      display: none;
+    }
   }
 
   &__item a {
@@ -33,6 +67,10 @@
   &__lang {
     display: flex;
 
+    @media (max-width: 890px) {
+      display: none;
+    }
+
     &--item {
       color: $lang-color;
       @include hover(opacity, 0.6);
@@ -40,11 +78,11 @@
 
     &--divider {
       margin: 0 5px;
-      color: $activ-lang-color;
+      color: $active-lang-color;
     }
   }
 }
 
 .is-active {
-  color: $activ-lang-color;
+  color: $active-lang-color;
 }

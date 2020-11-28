@@ -5,6 +5,10 @@
   background-color: $bgc-searchbar;
   height: 80px;
 
+  @media (max-width: 890px) {
+    display: none;
+  }
+
   &__name {
     display: flex;
     align-items: center;

@@ -11,3 +11,9 @@
   font-size: 15px;
   line-height: 20px;
 }
+
+@mixin burger-item {
+  background-color: $burger-color;
+  height: 1px;
+  width: 22px;
+}

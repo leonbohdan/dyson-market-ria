@@ -15,6 +15,11 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 28px;
+
+      @media (max-width: 890px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
 
     &--block {
@@ -38,6 +43,16 @@
     margin-top: 37px;
     @include main-text;
 
+    @media (max-width: 890px) {
+      width: 330px;
+      height: 110px;
+      font-size: 14px;
+      line-height: 18px;
+      justify-content: start;
+      text-align: start;
+      padding: 0 15px;
+    }
+
     &--number {
       position: absolute;
       top: -12px;
@@ -53,10 +68,6 @@
       border-radius: 50%;
       border: 2px solid $text-color-light;
       box-shadow: 0 2px 4px rgba(84, 149, 239, 0.15);
-    }
-
-    &--center {
-      // margin: 37px 30px 0;
     }
 
     &--last {
