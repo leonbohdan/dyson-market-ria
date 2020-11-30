@@ -30,11 +30,44 @@
 
           <a
             class="navbar__toggler"
+            id="burger-mobile"
             type="button"
-            data-target="#navbarText"
           >
             <div class="navbar__toggler--icon"></div>
+
           </a>
+
+          <div
+            class="navbar__menu"
+            id="burger__menu"
+          >
+
+            <ul class="navbar__list">
+              <li class="navbar__list--item">
+                <button
+                  class="navbar__list--button"
+                >
+                  Перейти в Личный кабинет
+                </button>
+              </li>
+
+              <li class="navbar__list--item">
+                <a href="#">Чехлы на сидения</a>
+              </li>
+
+              <li class="navbar__list--item">
+                <a href="#">Защита двигателя</a>
+              </li>
+
+              <li class="navbar__list--item">
+                <a href="#">Коврики</a>
+              </li>
+
+              <li class="navbar__list--item">
+                <a href="#">Фаркопы</a>
+              </li>
+            </ul>
+          </div>
 
           <div class="navbar__items">
             <div class="navbar__item">
@@ -65,10 +98,15 @@
       </div>
 
       <div class="searchbar searchbar__container container">
-        <div class="searchbar__menu menu">
-          <div class="searchbar__name">Каталог товаров</div>
+        <div class="searchbar__menu menu" id="catalog-menu">
+          <div class="searchbar__name" id="catalog-button">
+            <div class="serchbar__burger">
+              <div class="searchbar__burger--icon"></div>
+            </div>
+            Каталог товаров
+          </div>
 
-          <ul class="searchbar__list">
+          <ul class="searchbar__list searchbar__list--toggle" id="catalog-list">
             <li class="searchbar__item">
               <a href="#">Чехлы на сидения</a>
             </li>
