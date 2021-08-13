@@ -1,0 +1,137 @@
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bgc-searchbar;
+  height: 80px;
+
+  @media (max-width: 890px) {
+    display: none;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 46px;
+    border-radius: 2px;
+    background-color: $button-color;
+    color: $text-color-light;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+    @include hover(opacity, 0.9);
+  }
+
+  &__burger {
+
+    &--icon {
+      position: relative;
+      display: block;
+      margin: 0 15px;
+    }
+
+    &--icon::before {
+      position: absolute;
+      content: "";
+      top: -8px;
+    }
+
+    &--icon::after {
+      position: absolute;
+      content: "";
+      top: 8px;
+    }
+
+    &--icon,
+    &--icon::before,
+    &--icon::after {
+      @include burger-catalog;
+    }
+  }
+
+  &__menu {
+    position: relative;
+  }
+
+  &__list {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 270px;
+
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transform: scaleY(1);
+    opacity: 1;
+
+    &--toggle {
+      transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item a {
+    color: $text-color-dark;
+    padding: 9px 20px;
+    width: 270px;
+    height: 36px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include hover(background-color, $hover-color);
+    @include hover(color, $text-color-light);
+  }
+
+  &__search-box {
+    display: flex;
+    width: 100%;
+
+    &--search {
+      max-width: 770px;
+      width: 100%;
+      height: 46px;
+      padding: 0 25px;
+      color: $lang-color;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+
+      outline-style: none;
+      border: 1px solid $search-border-color;
+      border-radius: 2px 0 0 2px;
+    }
+
+    &--button {
+      max-width: 100px;
+      width: 100%;
+      height: 46px;
+      cursor: pointer;
+      color: $text-color-light;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+
+      outline: none;
+      border: none;
+      background-color: $button-color;
+      border-radius: 0 2px 2px 0;
+      margin-left: -1px;
+
+      @include hover(opacity, 0.9);
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+  }
+}

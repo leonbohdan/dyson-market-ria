@@ -2,6 +2,85 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+.main {
+
+  &__container {
+    background-color: $bgc-main-2;
+  }
+
+  &__conditions {
+    padding-top: 50px;
+
+    &--heading {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+
+      @media (max-width: 890px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &--block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 370px;
+    height: 100px;
+    background-color: $bgc-main;
+    border-radius: 10px;
+    margin-top: 37px;
+    @include main-text;
+
+    @media (max-width: 890px) {
+      width: 330px;
+      height: 110px;
+      font-size: 14px;
+      line-height: 18px;
+      justify-content: start;
+      text-align: start;
+      padding: 0 15px;
+    }
+
+    &--number {
+      position: absolute;
+      top: -12px;
+      left: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $text-color-light;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-color: $button-color;
+      border-radius: 50%;
+      border: 2px solid $text-color-light;
+      box-shadow: 0 2px 4px rgba(84, 149, 239, 0.15);
+    }
+
+    &--last {
+      width: 770px;
+      margin-bottom: 37px;
+    }
+  }
+
+  &__paragraph {
+    @include main-text;
+
+    &--bottom {
+      padding-bottom: 37px;
+    }
+  }
 }

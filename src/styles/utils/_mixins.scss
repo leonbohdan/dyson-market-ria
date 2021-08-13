@@ -4,3 +4,23 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin main-text {
+  color: $text-color-dark;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin burger-item {
+  background-color: $burger-color;
+  height: 1px;
+  width: 22px;
+}
+
+@mixin burger-catalog {
+  height: 2px;
+  width: 24px;
+  border-radius: 2px;
+  background-color: $text-color-light;
+}
